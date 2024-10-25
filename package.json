@@ -1,0 +1,19 @@
+{
+  "name": "websearchllm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.12"
+  },
+  "dependencies": {
+    "@types/turndown": "^5.0.5",
+    "turndown": "^7.2.0"
+  }
+}
