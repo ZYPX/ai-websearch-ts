@@ -1,6 +1,7 @@
 import { Headers as headers } from "./types";
-import * as process from "node:process";
+import 'dotenv/config';
 
+const OPEN_ROUTER_KEY = process.env.OR_KEY;
 // Types for the configuration
 export interface APIRequestConfig {
     model: string;
@@ -36,7 +37,7 @@ export const defaultHeaders: headers = {
 };
 
 export const apiHeaders = new Headers({
-    "Authorization": `Bearer ${process.env.OR_KEY}`,
+    "Authorization": `Bearer ${OPEN_ROUTER_KEY}`,
     "Content-Type": "application/json",
     "User-Agent": defaultHeaders["user-agent"]
 });
